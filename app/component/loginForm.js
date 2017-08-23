@@ -24,7 +24,7 @@ const signinUser = gql`
 const email = ''
 const password = ''
 
-class Login extends React.Component{
+class LoginForm extends React.Component{
   constructor(props){
     super(props)
     this.state ={
@@ -139,5 +139,5 @@ const styles = StyleSheet.create({
   }
 })
 
-const LoginForm = graphql(signinUser,{name:'signinUser'})(Login)
-export default LoginForm
+const Login = graphql(signinUser,{name:'signinUser'})(LoginForm)
+export default Login
